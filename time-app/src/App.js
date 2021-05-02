@@ -13,7 +13,7 @@ class App extends Component{
         <p className="App-intro">
           Hi {this.props.name}!
         </p>
-        <Clock />
+        {/* <Clock /> */}
         <TimeSelector />
       </div>
     );
