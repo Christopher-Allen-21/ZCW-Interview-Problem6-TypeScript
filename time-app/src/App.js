@@ -1,20 +1,19 @@
+import React from 'react';
 import './App.css';
-import Clock from './components/Clock.js';
-import TimeSelector from './components/TimeSelector.js';
+import HoursRow from './components/HoursRow';
+import MinutesRow from './components/MinutesRow'
 
-import { Component } from 'react';
 
-let time = new Date().toLocaleString();
+class App extends React.Component{
 
-class App extends Component{
   render(){
     return (
       <div className="App">
         <p className="App-intro">
-          Hi {this.props.name}!
+          Hi ZipCoder!
         </p>
-        {/* <Clock /> */}
-        <TimeSelector />
+        <HoursRow />
+        <MinutesRow />
       </div>
     );
   }
