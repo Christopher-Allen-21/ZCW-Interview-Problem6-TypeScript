@@ -1,4 +1,7 @@
 import './App.css';
+import Clock from './components/Clock.js';
+import TimeSelector from './components/TimeSelector.js';
+
 import { Component } from 'react';
 
 let time = new Date().toLocaleString();
@@ -10,9 +13,8 @@ class App extends Component{
         <p className="App-intro">
           Hi {this.props.name}!
         </p>
-        <p className="App-clock">
-          The time is {time}.
-        </p> 
+        <Clock />
+        <TimeSelector />
       </div>
     );
   }
