@@ -20,10 +20,10 @@ function App() {
       <ol>
         <li><HoursRow id="hours" hourOptions={hourOptions}/></li>
         <li><MinutesRow id="minutes" minuteOptions={minuteOptions}/></li>
-        <li><AmPmRow id="am-pm" amPmOptions={amPmOptions}/></li>
+        <li><AmPmRow id="am-pm" amPmOptions={amPmOptions} /></li>
       </ol>
         
-      <MilitaryTimeRow />
+      <MilitaryTimeRow selectedHour={selectedHour} selectedMinute={selectedMinute} selectedAmPm={selectedAmPm}/>
         
     </div>
     );

@@ -4,13 +4,14 @@ import '../styling/AmPmRow.css';
 export default function AmPmRow(props){
     const {
         amPmOptions,
-        selectedAmPm
+        selectedAmPm,
+        onChangeAmPm
     } = props
 
     return (
         <div>
             <p>AM/PM</p>
-            <select>
+            <select value={selectedAmPm} onChange={onChangeAmPm}>
                 {amPmOptions.map(option => (
                     <option key={option} value={option}>{option}</option>
                 ))}
