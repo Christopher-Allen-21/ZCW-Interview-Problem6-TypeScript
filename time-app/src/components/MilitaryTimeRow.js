@@ -268,9 +268,10 @@ export default function MilitaryTimeRow(props){
   
 
     return (
-        <div>
-            <p>The current Military Time is: <strong>{convertedHour} {convertedMinute} Hours</strong></p>
+        <>
             <br />
-        </div>
+            <p>The current Military Time is: <span>{convertedHour} {convertedMinute} Hours</span></p>
+            <br />
+        </>
     )
 }

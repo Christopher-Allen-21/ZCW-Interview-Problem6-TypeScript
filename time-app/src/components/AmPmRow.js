@@ -9,7 +9,7 @@ export default function AmPmRow(props){
     } = props
 
     return (
-        <div>
+        <>
             <p>AM/PM</p>
             <select className="select-css" value={selectedAmPm} onChange={onChangeAmPm}>
                 {amPmOptions.map(option => (
@@ -18,7 +18,6 @@ export default function AmPmRow(props){
                     </option>
                 ))}
             </select>
-
-        </div>
+        </>
     )
 }
