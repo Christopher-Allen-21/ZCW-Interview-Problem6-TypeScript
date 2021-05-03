@@ -1,23 +1,19 @@
 import React from 'react'
 import '../styling/HoursRow.css';
 
-export default function HoursRow(){
+export default function HoursRow(props){
+    const {
+        hourOptions, 
+        selectedHour
+    } = props
+
     return (
         <div>
             <p>Hours</p>
             <select>
-                <option value="01">01</option>
-                <option value="02">02</option>
-                <option value="03">03</option>
-                <option value="04">04</option>
-                <option value="05">05</option>
-                <option value="06">06</option>
-                <option value="07">07</option>
-                <option value="08">08</option>
-                <option value="09">09</option>
-                <option value="10">10</option>
-                <option value="11">11</option>
-                <option value="12">12</option>
+                {hourOptions.map(option => (
+                    <option key={option} value={option}>{option}</option>
+                ))}
             </select>
 
         </div>
