@@ -8,7 +8,7 @@ export default function MilitaryTimeRow(props){
         selectedAmPm
     } = props
 
-    let convertedHour = "Zero Dark";
+    let convertedHour = "Zero One";
     let convertedMinute = "Zero";   
 
     if(selectedAmPm === "AM"){
@@ -59,7 +59,7 @@ export default function MilitaryTimeRow(props){
         else if(selectedHour === "03"){
             convertedHour = "Fifteen Hundred and";
         }
-        else if(selectedHour == "04"){
+        else if(selectedHour === "04"){
             convertedHour = "Sixteen Hundred and";
         }
         else if(selectedHour === "05"){
