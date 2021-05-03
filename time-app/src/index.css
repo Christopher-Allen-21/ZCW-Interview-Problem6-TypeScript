@@ -6,7 +6,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #292a2b;
-  color: #007EE5;
+  color: white;
+  background-image: url(https://blog.spoongraphics.co.uk/wp-content/uploads/2010/11/Woodland-Camo.jpg);
 }
 
 code {
