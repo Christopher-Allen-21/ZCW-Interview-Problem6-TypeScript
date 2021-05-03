@@ -1,4 +1,4 @@
-# Typescript
+# ~~Typescript~~ JavaScript and React
 
 _Hot, Hot, HOT!_
 
