@@ -13,7 +13,9 @@ export default function HoursRow(props){
             <p>Hours</p>
             <select className="select-css" value={selectedHour} onChange={onChangeHour}>
                 {hourOptions.map(option => (
-                    <option key={option} value={option}>{option}</option>
+                    <option key={option} value={option}>
+                        {option}
+                    </option>
                 ))}
             </select>
 

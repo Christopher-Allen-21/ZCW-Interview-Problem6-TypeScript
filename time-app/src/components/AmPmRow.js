@@ -1,5 +1,4 @@
 import React from 'react'
-import App from '../App';
 import '../styling/AmPmRow.css';
 
 export default function AmPmRow(props){
@@ -14,7 +13,9 @@ export default function AmPmRow(props){
             <p>AM/PM</p>
             <select className="select-css" value={selectedAmPm} onChange={onChangeAmPm}>
                 {amPmOptions.map(option => (
-                    <option key={option} value={option}>{option}</option>
+                    <option key={option} value={option}>
+                        {option}
+                    </option>
                 ))}
             </select>
 

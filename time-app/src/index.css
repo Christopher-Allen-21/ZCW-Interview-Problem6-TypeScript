@@ -7,8 +7,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #292a2b;
   color: white;
-  background-image: url(https://blog.spoongraphics.co.uk/wp-content/uploads/2010/11/Woodland-Camo.jpg);
+  /* background-image: url(https://blog.spoongraphics.co.uk/wp-content/uploads/2010/11/Woodland-Camo.jpg); */
+  background-image: url(https://www.onlygfx.com/wp-content/uploads/2019/09/6-blue-camouflage-texture-tile-1.png);
 }
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

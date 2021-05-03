@@ -13,7 +13,9 @@ export default function MinutesRow(props){
             <p>Minutes</p>
             <select className="select-css" value={selectedMinute} onChange={onChangeMinute}>
                 {minuteOptions.map(option => (
-                    <option key={option} value={option}>{option}</option>
+                    <option key={option} value={option}>
+                        {option}
+                    </option>
                 ))}
             </select>
 

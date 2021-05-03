@@ -15,25 +15,26 @@ function App() {
   const [minute, setMinute] = useState();
   const [amPm, setAmPm] = useState();
 
-  useEffect( () => {
-    const hourChosen = hourOptions[0]
-    const minuteChosen = minuteOptions[0]
-    const aMPmChosen = amPmOptions[0]
-    setHour(hourChosen)
-    setMinute(minuteChosen)
-    setAmPm(aMPmChosen)
-  })
+  function handleButtonClick() {
+    setHour(HoursRow.value);
+    setMinute(MinutesRow.value);
+    setAmPm(AmPmRow.value);
+  }
 
   return (
     <div className="App">
+      <br />
       <h1 className="App-intro">ZipCode Military Time Converter</h1>
 
       <ol>
-        <li><HoursRow id="hours" hourOptions={hourOptions} selectedHour={hour} onChangeHour={e => setHour(e.target.value)}/></li>
-        <li><MinutesRow id="minutes" minuteOptions={minuteOptions} selectedMinute={minute} onChangeMinute={e => setMinute(e.target.value)}/></li>
-        <li><AmPmRow id="am-pm" amPmOptions={amPmOptions} selectedAmPm={amPm} onChangeAmPm={e => setAmPm(e.target.value)}/></li>
+        <li><HoursRow id="hours" hourOptions={hourOptions} onChangeHour={e => setHour(e.target.value)}/></li>
+        <li><MinutesRow id="minutes" minuteOptions={minuteOptions} onChangeMinute={e => setMinute(e.target.value)}/></li>
+        <li><AmPmRow id="am-pm" amPmOptions={amPmOptions} onChangeAmPm={e => setAmPm(e.target.value)}/></li>
       </ol>
-        
+
+      <button onClick="handleButtonClick">Convert the Time!</button>
+
+      <p>Hour: {hour} Minute: {minute} AM/PM: {amPm}</p> 
       <MilitaryTimeRow selectedHour={hour} selectedMinute={minute} selectedAmPm={amPm}/>
         
     </div>
