@@ -1,4 +1,4 @@
-# Typescript
+# ~~Typescript~~ JavaScript and React
 
 _Hot, Hot, HOT!_
 
@@ -20,7 +20,7 @@ https://desktop.github.com
 
 Time to see some 21st century tools!
 
-# Problem 6: TypeScript Boot Camp Time
+# Problem 6: ~~TypeScript~~ JavaScript Boot Camp Time
 
 Given a time, given a time from a simple user interface in numerical format, convert that value into its military time phrase and display it on the app.
 
@@ -91,7 +91,7 @@ Ten Hundred Zero Two Hours
 
 ## The App
 
-Build a simple UI using Angular:
+Build a simple UI using ~~Angular~~ React:
 
 A page which has three pieces, 
 up top a simple time chooser/picker, where you can only pick 1 - 12 hours, 0 - 59 minutes and Am/Pm.
