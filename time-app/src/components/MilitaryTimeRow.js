@@ -10,7 +10,7 @@ export default function MilitaryTimeRow(props){
 
     return (
         <div>
-            <p>Military Time biatch</p>
+            <p>The current Military Time is {selectedHour} Hundred {selectedMinute} Hours</p>
         </div>
     )
 }
