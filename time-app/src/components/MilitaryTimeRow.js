@@ -8,83 +8,83 @@ export default function MilitaryTimeRow(props){
         selectedAmPm
     } = props
 
-    let convertedHour = "Zero";
+    let convertedHour = "Zero Dark";
     let convertedMinute = "Zero";   
 
     if(selectedAmPm === "AM"){
         if(selectedHour === "01"){
-            convertedHour = "Zero One";
+            convertedHour = "Zero One Hundred and";
         }
         else if(selectedHour === "02"){
-            convertedHour = "Zero Two";
+            convertedHour = "Zero Two Hundred and";
         }
         else if(selectedHour === "03"){
-            convertedHour = "Zero Three";
+            convertedHour = "Zero Three Hundred and";
         }
         else if(selectedHour === "04"){
-            convertedHour = "Zero Four";
+            convertedHour = "Zero Four Hundred and";
         }
         else if(selectedHour === "05"){
-            convertedHour = "Zero Five";
+            convertedHour = "Zero Five Hundred and";
         }
         else if(selectedHour === "06"){
-            convertedHour = "Zero Six";
+            convertedHour = "Zero Six Hundred and";
         }
         else if(selectedHour === "07"){
-            convertedHour = "Zero Seven";
+            convertedHour = "Zero Seven Hundred and";
         }
         else if(selectedHour === "08"){
-            convertedHour = "Zero Eight";
+            convertedHour = "Zero Eight Hundred and";
         }
         else if(selectedHour === "09"){
-            convertedHour = "Zero Nine";
+            convertedHour = "Zero Nine Hundred and";
         }
         else if(selectedHour === "10"){
-            convertedHour = "Ten";
+            convertedHour = "Ten Hundred and";
         }
         else if(selectedHour === "11"){
-            convertedHour = "Eleven";
+            convertedHour = "Eleven Hundred and";
         }
         else if(selectedHour === "12"){
-            convertedHour = "Zero"
+            convertedHour = "Zero Dark"
         }
     }
     else if(selectedAmPm === "PM"){
         if(selectedHour === "01"){
-            convertedHour = "Thirteen";
+            convertedHour = "Thirteen Hundred and";
         }
         else if(selectedHour === "02"){
-            convertedHour = "Fourteen";
+            convertedHour = "Fourteen Hundred and";
         }
         else if(selectedHour === "03"){
-            convertedHour = "Fifteen";
+            convertedHour = "Fifteen Hundred and";
         }
         else if(selectedHour == "04"){
-            convertedHour = "Sixteen";
+            convertedHour = "Sixteen Hundred and";
         }
         else if(selectedHour === "05"){
-            convertedHour = "Seventeen";
+            convertedHour = "Seventeen Hundred and";
         }
         else if(selectedHour === "06"){
-            convertedHour = "Eighteen";
+            convertedHour = "Eighteen Hundred and";
         }
         else if(selectedHour === "07"){
-            convertedHour = "Nineteen";
+            convertedHour = "Nineteen Hundred and";
         }
         else if(selectedHour === "08"){
-            convertedHour = "Twenty";
+            convertedHour = "Twenty Hundred and";
         }
         else if(selectedHour === "09"){
-            convertedHour = "Twenty-One";
+            convertedHour = "Twenty-One Hundred and";
         }
         else if(selectedHour === "10"){
-            convertedHour = "Twenty-Two";
+            convertedHour = "Twenty-Two Hundred and";
         }
         else if(selectedHour === "11"){
-            convertedHour = "Twenty-Three";
+            convertedHour = "Twenty-Three Hundred and";
         }
         else if(selectedHour === "12"){
-            convertedHour = "Twelve";
+            convertedHour = "Twelve Hundred and";
         }
     }
 
@@ -269,7 +269,7 @@ export default function MilitaryTimeRow(props){
 
     return (
         <div>
-            <p>The current Military Time is: <strong>{convertedHour} Hundred and {convertedMinute} Hours</strong></p>
+            <p>The current Military Time is: <strong>{convertedHour} {convertedMinute} Hours</strong></p>
             <br />
         </div>
     )
