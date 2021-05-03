@@ -89,31 +89,31 @@ export default function MilitaryTimeRow(props){
     }
 
     if(selectedMinute === "01"){
-        convertedMinute = "One";
+        convertedMinute = "Zero One";
     }
     else if(selectedMinute === "02"){
-        convertedMinute = "Two"
+        convertedMinute = "Zero Two"
     }
     else if(selectedMinute === "03"){
-        convertedMinute = "Three"
+        convertedMinute = "Zero Three"
     }
     else if(selectedMinute === "04"){
-        convertedMinute = "Four"
+        convertedMinute = "Zero Four"
     }
     else if(selectedMinute === "05"){
-        convertedMinute = "Five"
+        convertedMinute = "Zero Five"
     }
     else if(selectedMinute === "06"){
-        convertedMinute = "Six"
+        convertedMinute = "Zero Six"
     }
     else if(selectedMinute === "07"){
-        convertedMinute = "Seven"
+        convertedMinute = "Zero Seven"
     }
     else if(selectedMinute === "08"){
-        convertedMinute = "Eight"
+        convertedMinute = "Zero Eight"
     }
     else if(selectedMinute === "09"){
-        convertedMinute = "Nine"
+        convertedMinute = "Zero Nine"
     }
     else if(selectedMinute === "10"){
         convertedMinute = "Ten"
@@ -269,7 +269,7 @@ export default function MilitaryTimeRow(props){
 
     return (
         <div>
-            <p>The current Military Time is: <strong>{convertedHour} Hundred {convertedMinute} Hours</strong></p>
+            <p>The current Military Time is: <strong>{convertedHour} Hundred and {convertedMinute} Hours</strong></p>
             <br />
         </div>
     )
